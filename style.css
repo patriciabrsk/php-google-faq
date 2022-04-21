@@ -1,21 +1,26 @@
 header {
     position: fixed;
     top: 0;
-    overflow: hidden;
     background-color: white;
     width: 100%;
     z-index: 1;
 }
 
 header nav {
-    height: 15vh;
+    height: 85px;
 }
 
 header nav img {
     width: 70px;
 }
 
+header nav div.navbar-box {
+   display: flex;
+
+}
+
 main {
-    margin-top: 140px;
+    margin-top: 180px;
+    padding: 0 200px;
 }
 

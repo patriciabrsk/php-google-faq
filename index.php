@@ -2,7 +2,7 @@
     $faqs = [
         [
             'question' => "How are you implementing the recent Court of Justice of the European Union (CJEU) decision on the right to be forgotten?",
-            'answer' => "The recent ruling by the Court of Justice of the European Union has profound consequences for search engines in Europe. The court found that certain users have the right to ask search engines like Google to remove results for queries that include the person's name. To qualify, the results shown would need to be inadequate, irrelevant, no longer relevant, or excessive.
+            'answer' => "<p>The recent ruling by the Court of Justice of the European Union has profound consequences for search engines in Europe. The court found that certain users have the right to ask search engines like Google to remove results for queries that include the person's name. To qualify, the results shown would need to be inadequate, irrelevant, no longer relevant, or excessive.
 
             Since this ruling was published on 13 May 2014, we've been working round the clock to comply. This is a complicated process because we need to assess each individual request and balance the rights of the individual to control his or her personal data with public's right to know and distribute information.
             
@@ -10,7 +10,7 @@
             
             We look forward to working closely with data protection authorities and others over the coming months as we refine our approach. The CJEU's ruling constitutes a significant change for search engines. While we are concerned about its impact, we also believe it's important to respect the Court's judgment and are working hard to devise a process that complies with the law.
             
-            When you search for a name, you may see a notice that says that results may have been modified in accordance with data protection law in Europe. We’re showing this notice in Europe when a user searches for most names, not just pages that have been affected by a removal."
+            When you search for a name, you may see a notice that says that results may have been modified in accordance with data protection law in Europe. We’re showing this notice in Europe when a user searches for most names, not just pages that have been affected by a removal.</p>"
         ],
         [
             'question' => "How does Google protect my privacy and keep my information secure?",
@@ -26,13 +26,10 @@
             'question' => "Why is my account associated with a country?",
             'answer' => "Your account is associated with a country (or territory) in the Terms of Service so that we can determine two things:
 
-            1. The Google affiliate that provides the services, that processes your information, and that is responsible for complying with applicable privacy laws. 
-            Generally, Google offers its consumer services through either of two companies: Google Ireland Limited, if you’re located in the European Economic Area (EU countries plus Iceland, Liechtenstein, and Norway) or Switzerland
-            Google LLC, based in the United States, for the rest of the world
-            The version of the terms that govern our relationship, which can vary depending on local laws
+            <ol><li>The Google affiliate that provides the services, that processes your information, and that is responsible for complying with applicable privacy laws. Generally, Google offers its consumer services through either of two companies:<ol type='a'><li>Google Ireland Limited, if you’re located in the European Economic Area (EU countries plus Iceland, Liechtenstein, and Norway) or Switzerland</li><li>Google LLC, based in the United States, for the rest of the world</li></ol></li><li>The version of the terms that govern our relationship, which can vary depending on local laws</li></ol>
             Keep in mind that Google services are essentially the same regardless of the affiliate that provides the services or your country association.
             
-            Determining the country associated with your account
+            <h5>Determining the country associated with your account</h5>
             When you create a new account, we associate your account with a country based on where you created your Google Account. 
             For accounts at least a year old, we use the country from which you usually access Google services — typically where you’ve spent the most time in the last year.
             
@@ -52,13 +49,13 @@
         ],
         [
             'question' => "Are my search queries sent to websites when I click on Google Search results?",
-            'answer' => "In some cases, yes. When you click on a search result in Google Search, your web browser also may send the Internet address, or URL, of the search results page to the destination webpage as the Referrer URL. 
+            'answer' => "<p>In some cases, yes. When you click on a search result in Google Search, your web browser also may send the Internet address, or URL, of the search results page to the destination webpage as the Referrer URL. 
             The URL of the search results page may sometimes contain the search query you entered. 
             If you are using SSL Search (Google’s encrypted search functionality), under most circumstances, your search terms will not be sent as part of the URL in the Referrer URL. 
             There are some exceptions to this behavior, such as if you are using some less popular browsers. 
             More information on SSL Search can be found here. 
             Search queries or information contained in the Referrer URL may be available via Google Analytics or an application programming interface (API). 
-            In addition, advertisers may receive information relating to the exact keywords that triggered an ad click."
+            In addition, advertisers may receive information relating to the exact keywords that triggered an ad click.</p>"
         ]
     ];
 ?>
@@ -76,24 +73,31 @@
 </head>
 <body>
     <header>
-        <nav class="navbar border-bottom">
-            <div class="container-fluid">
-                <a href="#">
-                    <img src="google.png" alt="Google logo">
-                </a>
-                
+        <nav class="border-bottom px-3">
+            <div class="container-fluid p-2">
+                <div class="logo-box d-flex">
+                    <a href="#" class="me-2">
+                        <img src="google.png" alt="Google logo">
+                    </a>
+                    <p class="text-secondary fs-5">Privacy & Terms</p>
+                </div>
+                <div class="navbar-box d-flex">
+                    <a class="text-decoration-none text-secondary me-5" href="#">Overview</a>
+                    <a class="text-decoration-none text-secondary me-5" href="#">Privacy Policy</a>
+                    <a class="text-decoration-none text-secondary me-5" href="#">Terms of Service</a>
+                    <a class="text-decoration-none text-secondary me-5" href="#">Technologies</a>
+                    <a class="text-decoration-none text-secondary" href="#">FAQ</a>
+                </div>
             </div>
         </nav>
     </header>
-    <main class="container d-flex justify-content-center px-5">
-        <ul class="list-unstyled p-5">
-            <?php foreach ($faqs as $faq) {?>
-                <li class="pb-5 px-5">
-                    <span class="fw-bold fs-3 mb-5"><?php echo nl2br($faq['question']) . '<br>'; ?></span>
-                    <?php echo nl2br($faq['answer']); ?>
-                </li>
-            <?php }?> 
-        </ul>
+    <main class="container">
+        <?php foreach ($faqs as $faq) {?>
+            <div class="pb-5 px-5">
+                <span class="fw-bold fs-3 mb-5"><?php echo nl2br($faq['question']) . '<br>'; ?></span>
+                <?php echo nl2br($faq['answer']); ?>
+            </div>
+        <?php }?> 
     </main>
 </body>
 </html>
