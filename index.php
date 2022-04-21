@@ -90,9 +90,14 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <ul>
-            <?php ?>
+    <main class="container d-flex justify-content-center">
+        <ul class="list-unstyled">
+            <?php foreach ($faqs as $faq) {?>
+                <li class="pb-4">
+                    <span class="fw-bold fs-3"><?php echo $faq['question'] . '<br>'; ?></span>
+                    <?php echo $faq['answer']; ?>
+                </li>
+            <?php }?> 
         </ul>
     </main>
 </body>
