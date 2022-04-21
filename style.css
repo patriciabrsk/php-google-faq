@@ -18,6 +18,11 @@ header nav div.navbar-box {
    display: flex;
    font-size: 0.7rem;
 }
+header nav div.navbar-box a:last-child {
+    padding-bottom: 2px;
+    color: blue;
+    border-bottom: 3px solid blue;
+}
 
 main {
     margin-top: 180px;
