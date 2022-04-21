@@ -1,0 +1,21 @@
+header {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav {
+    height: 15vh;
+}
+
+header nav img {
+    width: 70px;
+}
+
+main {
+    margin-top: 140px;
+}
+
