@@ -26,6 +26,9 @@ header nav div.navbar-box a:last-child {
 
 main {
     margin-top: 180px;
-    /* padding: 0 300px; */
+}
+
+main div.faq p {
+    font-size: 0.9rem;
 }
 
