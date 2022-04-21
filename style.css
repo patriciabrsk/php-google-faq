@@ -16,10 +16,11 @@ header nav img {
 
 header nav div.navbar-box {
    display: flex;
+   font-size: 0.7rem;
 }
 
 main {
     margin-top: 180px;
-    padding: 0 200px;
+    /* padding: 0 300px; */
 }
 

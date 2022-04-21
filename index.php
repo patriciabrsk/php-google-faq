@@ -63,13 +63,13 @@
     <header>
         <nav class="border-bottom px-3">
             <div class="container-fluid p-2">
-                <div class="logo-box d-flex align-items-center">
+                <div class="logo-box d-flex align-items-center mb-2">
                     <a href="#" class="me-2">
                         <img src="google.png" alt="Google logo">
                     </a>
                     <p class="text-secondary m-0">Privacy & Terms</p>
                 </div>
-                <div class="navbar-box d-flex fs-6">
+                <div class="navbar-box d-flex fs-6 mb-2">
                     <a class="text-decoration-none text-secondary me-5" href="#">Overview</a>
                     <a class="text-decoration-none text-secondary me-5" href="#">Privacy Policy</a>
                     <a class="text-decoration-none text-secondary me-5" href="#">Terms of Service</a>
@@ -79,10 +79,10 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="container w-60">
         <?php foreach ($faqs as $faq) {?>
             <div class="pb-5 px-5">
-                <span class="fw-bold fs-3 mb-5"><?php echo nl2br($faq['question']) . '<br>'; ?></span>
+                <h4 class="mb-5"><?php echo nl2br($faq['question']) . '<br>'; ?></h4>
                 <?php echo nl2br($faq['answer']); ?>
             </div>
         <?php }?> 
