@@ -53,6 +53,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f941ed7d14.js" crossorigin="anonymous"></script>
 
     <title>Google FAQ</title>
 </head>
@@ -60,18 +61,23 @@
     <header>
         <nav class="border-bottom px-2">
             <div class="container-fluid p-2">
-                <div class="logo-box d-flex align-items-center mb-2">
-                    <a href="#" class="me-2">
-                        <img src="google.png" alt="Google logo">
-                    </a>
-                    <p class="text-secondary fs-5 m-0">Privacy & Terms</p>
+                <div class="logo-box mb-2 d-flex align-items-center justify-content-between">
+                    <div class="logo d-flex align-items-center">
+                        <a href="#" class="me-2">
+                            <img src="google.png" alt="Google logo">
+                        </a>
+                        <p class="text-secondary fs-5 m-0">Privacy & Terms</p>
+                    </div>
+                    <div class="icons-right d-flex align-items-center">
+                        <i class="fa-solid fa-circle-user fa-2x"></i>
+                    </div>
                 </div>
                 <div class="navbar-box d-flex fs-6 pb-2">
                     <a class="text-decoration-none text-secondary me-5" href="#">Overview</a>
                     <a class="text-decoration-none text-secondary me-5" href="#">Privacy Policy</a>
                     <a class="text-decoration-none text-secondary me-5" href="#">Terms of Service</a>
                     <a class="text-decoration-none text-secondary me-5" href="#">Technologies</a>
-                    <a class="text-decoration-none txt-blue" id="txt-blue-override" href="#">FAQ</a>
+                    <a class="text-decoration-none txt-blue" href="#">FAQ</a>
                 </div>
             </div>
         </nav>
